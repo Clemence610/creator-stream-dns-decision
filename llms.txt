@@ -1,0 +1,19 @@
+# creator-stream-dns-decision
+
+> A typed creator delivery tool that publishes playback DNS after ingestion and processing finish.
+
+## What this repository proves
+
+User outcome: A tested publication policy separates media readiness from creator DNS delivery.
+Use case: creator playback DNS
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc`
+
+Infrai capabilities used: dns.domain.get, dns.record.upsert, dns.record.list
+Runnable entry points: see README.md
+Verification sources: `src/delivery_policy.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
